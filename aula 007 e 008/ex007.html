@@ -15,9 +15,15 @@
 <body>
     <h1>Iniciando estudos com <strong>DOM</strong> em JavaScript</h1>
     <p>Aqui vai o resultado</p>
+    <p>Estudando arvore DOM</p>
     <div>Clique em mim</div>
     <script>
-        window.document.write("Olá mundo!");
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[0]; /*Ele não pegou o negrito pois ele pegou so o texto dentro da tag p, se quiser pegar a formatação também, deve ser usado InnerHTML*/
+        corpo.style.backgroundColor = "red"
+        window.document.write("Está escrito assim: " + p1.innerText); /*Serve para escrever o texto que está dentro do elemento selecionado pela tag*/
+        p1.style.color = "blue"; /*altera o estilo de um elemento selecionado pela tag*/
+        
     </script>
 </body>
 </html>

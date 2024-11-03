@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="estilod02.css">
 </head>
 <body>
@@ -12,10 +12,18 @@
     </header>
     <section>
         <div>
-            Testando
+            <p>
+                Ano de Nascimento: <input type="number" name="ano" id="ano">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="radsex" id="masc" checked> <label for="masc">Masculino</label> <input type="radio" name="radsex" id="fem"> <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            Olá
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado</p>
         </div>
     </section>
     <footer>

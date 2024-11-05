@@ -8,6 +8,9 @@ function contar(){
     } else{
         var emoji_mao = '\u{1F449}' /*Usar codigo do unicode*/
         var emoji_chegada = '\u{1F3C1}'
+        var i = Number(i.value)
+        var f = Number(f.value)
+        var p = Number(p.value)
         res.innerHTML = "<p>Contando:</p>"
         if (p == 0){
             window.alert(`[ERRO] Passo invalido, considerando PASSO 1!`);
@@ -15,11 +18,17 @@ function contar(){
                 res.innerHTML += `${c} ${emoji_mao} `
             }
             res.innerHTML += `${emoji_chegada}`
-        } else{
-        for(var c = i; c < f; c = c + p){
+        } 
+        if(i < f){
+            for(var c = i; c <= f; c = c + p){
             res.innerHTML += `${c} ${emoji_mao} `
         }
         res.innerHTML += `${emoji_chegada}`
+        } else{
+            for(var c = i; c >= f; c = c - p){
+                res.innerHTML += `${c} ${emoji_mao} `
+            }
+            res.innerHTML += `${emoji_chegada}`
         }
     }
     }   

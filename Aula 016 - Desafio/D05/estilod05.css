@@ -22,6 +22,10 @@ input {
     cursor: pointer;
 }
 
+select#lista {
+    width: 150px;
+}
+
 input#final{
     margin-top: 3px;
 }

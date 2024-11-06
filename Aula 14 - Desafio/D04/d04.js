@@ -1,13 +1,15 @@
 function tabuada(){
-    var res = window.document.querySelector(`div#res`)
-    var n = window.document.querySelector(`input#numero`)
-    if(n.value.length == 0){
+    let tab = window.document.querySelector(`select#setab`)
+    let num = window.document.querySelector(`input#numero`)
+    if(num.value.length == 0){
         window.alert(`[ERRO!] Digite um número`)
     } else{
-        var n = Number(n.value)
-        for(var c = 0;c <= 10; c++){
-            var r = n*c;
-            res.innerHTML += `<p>${n} X ${c} = ${r}</p>`
-        }
+        let n = Number(num.value)
+        tab.innerHTML = ""
+        for(let c = 1;c <= 10; c++){
+            let item = window.document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item) /*Para atribuir o item ao tab como um filho*/
+       }
     }
 }

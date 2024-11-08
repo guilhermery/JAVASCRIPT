@@ -8,7 +8,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(120deg, yellow, red);
+    background: linear-gradient(120deg, rgb(238, 255, 0), rgb(255, 0, 0));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,4 +23,27 @@ body {
     background: transparent;
     border-radius: 3px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.493);
+}
+
+.relogio div {
+    display: flex;
+    flex-direction: column; /*Os elementos ficam alinhados em colunas*/
+    align-items: center; /*Os elementos são alinhados de cima para baixo*/
+    justify-content: center; /*Os elementos são alinhados da esquerda para direita*/
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white;
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.699);
+    letter-spacing: 3px; /*para ter um espaçamento entre as letras*/
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 10px;
 }

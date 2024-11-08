@@ -17,7 +17,7 @@ body {
 .relogio {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; /*Distribui os itens em espaços iguais, e os espaços do itens com as extremidades são iguais a metade dos espaços deles entre si*/
     height: 200px;
     width: 550px;
     background: transparent;

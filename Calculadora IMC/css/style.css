@@ -91,6 +91,7 @@ div#calcula input {
 input:focus{
     outline: none;
     border-width: 3px;
+    /*Ao clicar no input, tira o efeito da borda e aumenta ela em 3px*/
 }
 
 div#calcula input#botao{

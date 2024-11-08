@@ -24,6 +24,7 @@ div#calc {
     height: 380px;
     background-color: #592E83;
     border-radius: 15px;
+    box-shadow: -1px -4px 10px rgba(0, 0, 0, 0.521);
 }
 
 div#calc > span#titulo{
@@ -43,6 +44,7 @@ div#calcula {
     align-items: center;
     flex-direction: column;
     color: #ECEBE4;
+    box-shadow: 10px -3px 15px rgba(0, 0, 0, 0.103);
 }
 
 div#calcula p{
@@ -86,6 +88,7 @@ div#calcula input {
     color: #ECEBE4;
     cursor: pointer;
     width: 250px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.363);
 }
 
 input:focus{

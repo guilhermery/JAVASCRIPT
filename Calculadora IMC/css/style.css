@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(120deg, rgb(255, 251, 0), rgb(0, 255, 76));
+    background: linear-gradient(120deg, #9984D4, #230C33);
 }
 
 div#calc {
@@ -21,8 +21,8 @@ div#calc {
     justify-content: center;
     flex-direction: column;
     width: 550px;
-    height: 350px;
-    background-color: rgba(0, 128, 0, 0.767);
+    height: 380px;
+    background-color: #592E83;
     border-radius: 15px;
 }
 
@@ -30,11 +30,11 @@ div#calc > span#titulo{
     padding: 10px;
     font-size: 25px;
     font-weight: bolder;
-    color: white;
+    color: #ECEBE4;
 }
 
 div#calcula {
-    background-color: rgb(4, 192, 20) ;
+    background-color: #ceaafd93 ;
     width: 550px;
     height: 350px;
     border-radius: 15px;
@@ -42,7 +42,7 @@ div#calcula {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #ECEBE4;
 }
 
 div#calcula p{
@@ -63,6 +63,13 @@ div#calcula p#altura{
     flex-direction: column;
 }
 
+div#calcula p#verifica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 div#calcula span {
     margin-left: 5px;
     padding: 0px;
@@ -75,18 +82,25 @@ div#calcula input {
     margin: 5px;
     border-radius: 15px;
     border-color: transparent;
-    background-color: rgba(0, 255, 76, 0.438);
+    background-color: #7439c2b6;
+    color: #ECEBE4;
     cursor: pointer;
     width: 250px;
 }
 
 input:focus{
     outline: none;
+    border-width: 3px;
 }
 
 div#calcula input#botao{
     width: 275px;
-    color: white;
-    background-color: rgba(0, 255, 42, 0.767);
+    color: #ECEBE4;
+    background-color: #762adac7;
+}
+
+div#calcula input::placeholder{
+    color: #ECEBE4;
+    text-align: right;
 }
 

@@ -12,13 +12,16 @@
         <div id="calcula">
             <p id="peso">
                 <span>Peso em kg</span>
-                <input type="text" name="peso" id="peso">
+                <input type="text" name="peso" id="peso" placeholder="kg">
             </p>
             <p id="altura">
                 <span>Altura em metros</span>
-                <input type="text" name="altura" id="altura">
+                <input type="text" name="altura" id="altura" placeholder="m">
             </p>
-            <input type="button" value="Calcular" id="botao" onclick="calcula()">
+            <p id="verifica">
+                <input type="button" value="Calcular" id="botao" onclick="calcula()">
+                <span id="imc">Seu IMC: </span>
+            </p>
         </div>
     </div>
     <script src="./script/script.js"></script>

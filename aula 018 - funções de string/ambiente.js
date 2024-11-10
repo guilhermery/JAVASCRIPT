@@ -31,3 +31,36 @@ console.log(novafrase)
 
 //toLowerCase e toUpperCase: caixa alta e caixa baixa
 
+let fraseCaixaAlta = (frase.toUpperCase()) //Criei uma variavel que pega a frase em caixa alta
+
+console.log (fraseCaixaAlta)
+
+let fraseCaixaBaixa = (frase.toLowerCase()) //Criei uma variavel que pega a frase em caixa baixa
+
+console.log(fraseCaixaBaixa)
+
+// trim: Serve para tirar espaços desnecessários de uma string
+
+let novonome = "         Hello  World                 "
+
+console.log (novonome)
+
+let nometrim = novonome.trim()
+
+console.log(nometrim)
+
+//split: transforma uma variavel comum em um array
+
+console.log(frase.split(" ")) //O espaço serve para separar cada parte do array por um parametro, que nesse caso é o espaço em branco
+
+let tags = "PHP, JavaScript, Java, Python"
+
+console.log(tags.split(", ")) //Separa as tags a cada , e espaço, sobrando só os nomes
+
+//lastIndexOf: serve para achar o index de onde começa a ultima palavra que eu escolher, se houver duas, por exemplo
+
+tags = "PHP, JavaScript, Python, Java, Python"
+
+console.log(tags.indexOf('Python')) //Esse irá dar apenas onde começa o primeiro Python
+
+console.log(tags.lastIndexOf('Python')) //Esse irá dar exatamente onde se encontra a ultima palavra Python

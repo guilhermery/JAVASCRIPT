@@ -2,7 +2,7 @@
 
 let elemento = window.document.createElement(`div`) //Criei o elemento como uma div
 
-elemento.classList.add(`div-criada`) //Adicionei uma classe ao elemento criado
+elemento.classList.add(`div-criada`) //Adicionei uma classe ao elemento criado. Podemos excluir classes de um elemento com classList.remove ou alternar entre adicionar e excluir com classList.toggle (se a classe existir, será removida, e se não existir sera criada)
 
 let container = window.document.querySelector(`div#container`) //Acessei a div container que será a div pai
 
@@ -28,6 +28,6 @@ p1.appendChild(text1) //Inseri o text1 dentro do paragrafo
 
 elemento2.appendChild(p1) //Inseri o paragrafo dentro do elemento 2
 
-elemento2.id = `div-before` //Criei um id para o elemento 2 assim como criei uma classe para o elemento 1
+elemento2.id = `div-before` //Criei um id para o elemento 2 assim como criei uma classe para o elemento 1. Para remover o id de um elemento, podemos botar apenas elemento2.id = `` sem nada dentro. Para substituir o id de um elemento podemos botar elemento2.id = `novoid` sem usar nenhuma função distinta.
 
 container.insertBefore(elemento2, elemento) //Usei a função insertBefore para inserir o elemento 2 dentro do container antes do elemento 1. Os parametros são: o elemento que deseja inserir, elemento que deseja que fique após o elemento inserido

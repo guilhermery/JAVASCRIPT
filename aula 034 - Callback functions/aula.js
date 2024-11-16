@@ -1,4 +1,4 @@
-//A função callback é um recurso muito utilizado em JavaScript, que permite executar uma função após uma ação
+//A função callback é um recurso muito utilizado em JavaScript, que permite executar uma função após uma ação.
 //É um conceito fundamental para entender a programação assincrona do JavaScript, ou seja, que depende de um recurso para executar uma ação
 //O que caracteriza o callback é passar uma função como argumento para outra função e executar ela
 

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+h1 {
+    color: green;
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}

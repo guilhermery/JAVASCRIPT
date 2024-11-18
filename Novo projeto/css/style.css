@@ -1,1 +1,52 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(207, 50, 50), rgb(105, 1, 105));
+}
+
+h1 {
+    font-size: 25px;
+}
+
+div#principal {
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 25px;
+    display: flex;
+}
+
+button.ToDo {
+    background-color: white;
+    border-width: 1px;
+    width: 50px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+input#todo {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+}
+
+input#todo:focus {
+    outline: none;
+}
+
+input#todo::placeholder{
+    font-size: 15px;
+    padding-left: 5px;
+}

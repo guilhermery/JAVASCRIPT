@@ -14,7 +14,7 @@ h1 {
     font-size: 25px;
 }
 
-div#principal {
+div#tasks-container {
     color: white;
     margin-top: 50px;
     display: flex;
@@ -23,30 +23,57 @@ div#principal {
     justify-content: center;
 }
 
-form {
+div#tasks-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form#add-task-form {
     margin: 25px;
     display: flex;
 }
 
-button.ToDo {
+button#add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
+    cursor: pointer;
     border-width: 1px;
     width: 50px;
     font-size: 1.5em;
     font-weight: lighter;
 }
 
-input#todo {
+button#add-btn ion-icon {
+    width: 30px;
+}
+
+input#task-title {
     width: 400px;
     height: 30px;
     padding: 5px;
 }
 
-input#todo:focus {
+input#task-title:focus {
     outline: none;
 }
 
-input#todo::placeholder{
+input#task-title::placeholder{
     font-size: 15px;
     padding-left: 5px;
+}
+
+div#tasks-list-container h1{
+    margin-bottom: 30px;
+}
+
+ul#task-list {
+    
+}
+
+li#task-box {
+    background-color: white;
 }

@@ -7,16 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="principal">
-        <h1>Salve a sua próxima tarefa:</h1>
-        <div class="ToDo">
-            <form action="">
-                <input type="text" name="ToDo" id="todo" placeholder="O que você vai fazer?">
-                <button class="ToDo" onclick="envia()" onmouseover="cor()" onmouseout="volta()" type="submit"><p>+</p></button>
+    <div id="tasks-container">
+        <div id="tasks-header">
+            <h1>Salve a sua próxima tarefa:</h1>
+            <form action="" id="add-task-form">
+                <input type="text" id="task-title" placeholder="O que você vai fazer?">
+                <button id="add-btn" onclick="envia()" onmouseover="cor()" onmouseout="volta()" type="submit">
+                    <ion-icon name = "add-outline"></ion-icon>
+                </button>
             </form>
         </div>
-        <h1>Estas são as suas tarefas:</h1>
+        <div id="tasks-list-container">
+            <h1>Estas são as suas tarefas:</h1>
+            <ul id="task-list">
+                <li class="task-box">
+                    <span class="task-title">Teste</span>
+                    <ion-icon class="done-btn" name = "checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name = "close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">Teste 2</span>
+                    <ion-icon class="done-btn" name = "checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name = "close-outline"></ion-icon>
+                </li>
+                <li class="task-box">
+                    <span class="task-title">Teste 3</span>
+                    <ion-icon class="done-btn" name = "checkmark-outline"></ion-icon>
+                    <ion-icon class="remove-btn" name = "close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="script/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>

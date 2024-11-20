@@ -63,6 +63,7 @@ input#task-title {
     width: 400px;
     height: 30px;
     padding: 5px;
+    padding-left: 15px;
 }
 
 input#task-title:focus {
@@ -71,7 +72,6 @@ input#task-title:focus {
 
 input#task-title::placeholder{
     font-size: 15px;
-    padding-left: 5px;
 }
 
 div#tasks-list-container {
@@ -87,9 +87,9 @@ div#tasks-list-container h1{
 
 ul#task-list li {
     position: relative;
-    height: 50px;
-    line-height: 50px;
-    width: 445px;
+    height: 45px;
+    line-height: 45px;
+    width: 455px;
     list-style: none;
     background-color: white;
     padding-left: 15px;
@@ -100,7 +100,7 @@ ul#task-list ion-icon {
     position: absolute;
     top: 0;
     width: 30px;
-    height: 40px;
+    height: 35px;
     cursor: pointer;
     transition: .5s;
     font-weight: bold;

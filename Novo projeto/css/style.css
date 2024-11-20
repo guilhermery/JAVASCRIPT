@@ -64,6 +64,7 @@ input#task-title {
     height: 30px;
     padding: 5px;
     padding-left: 15px;
+    border: 1px solid black;
 }
 
 input#task-title:focus {
@@ -87,6 +88,8 @@ div#tasks-list-container h1{
 
 ul#task-list li {
     position: relative;
+    border: 1px solid black;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.404);
     height: 45px;
     line-height: 45px;
     width: 455px;

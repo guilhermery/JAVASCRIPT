@@ -43,8 +43,12 @@ button#add-btn {
     cursor: pointer;
     border-width: 1px;
     width: 50px;
-    font-size: 1.5em;
-    font-weight: lighter;
+    transition: .5s;
+}
+
+button#add-btn:hover {
+    background-color: rgb(87, 1, 87);
+    color: white;
 }
 
 ion-icon {
@@ -123,4 +127,10 @@ ul#task-list ion-icon {
 
 .hide {
     display: none;
+}
+
+#task-list li.done {
+    background-color: rgb(87, 1, 87);
+    color: white;
+    text-decoration: line-through;
 }

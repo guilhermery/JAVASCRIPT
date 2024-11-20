@@ -5,6 +5,8 @@ button.addEventListener(`click`, function(event){
     let tarefa = window.document.querySelector(`input#task-title`).value
     if (tarefa.length == 0){
         
+    } else if(tarefa.length > 40){
+        window.alert(`Digite em menos de 40 palavras`)
     } else{
         let ul = window.document.querySelector(`ul#task-list`)
         let lista = window.document.createElement(`li`)

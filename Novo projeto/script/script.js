@@ -1,6 +1,6 @@
-const formulario = window.document.querySelector(`form#add-task-form`)
+const button = window.document.querySelector(`button#add-btn`)
 
-formulario.addEventListener(`submit`, function(event){
+button.addEventListener(`click`, function(event){
     event.preventDefault()
     let tarefa = window.document.querySelector(`input#task-title`).value
     let ul = window.document.querySelector(`ul#task-list`)
@@ -20,5 +20,12 @@ formulario.addEventListener(`submit`, function(event){
     lista.appendChild(span)
     lista.appendChild(add)
     lista.appendChild(remove)
+
+    add.addEventListener(`click`, function done(){
+        lista.classList.add(`done`)
+    })
+    remove.addEventListener(`click`, function remover(){
+        lista.classList.add(`hide`)
+    })
 })
 

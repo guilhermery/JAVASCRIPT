@@ -12,10 +12,10 @@ body {
 
 h1 {
     font-size: 25px;
+    color: white;
 }
 
 div#tasks-container {
-    color: white;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -66,14 +66,31 @@ input#task-title::placeholder{
     padding-left: 5px;
 }
 
-div#tasks-list-container h1{
-    margin-bottom: 30px;
+div#tasks-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-ul#task-list {
+div#tasks-list-container h1{
+    margin-bottom: 15px;
+}
+
+ul#task-list ion-icon {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
     
 }
 
-li#task-box {
+li.task-box {
+    display: flex;
+    align-items: center;
+    width: 445px;
+    margin: 15px;
+    padding: 10px;
+    list-style: none;
     background-color: white;
 }

@@ -1,12 +1,13 @@
 const button = window.document.querySelector(`button#add-btn`) //Selecionei o button como constante ja que não ira mudar
 
 button.addEventListener(`click`, function(event){
-    event.preventDefault() //Serve para a pagina não precisar da animação de atualização sempre que for feito um submit
+    event.preventDefault() //Serve para não submeter o formulario
     let tarefa = window.document.querySelector(`input#task-title`).value  //Selecionei o input como uma variavel tarefa
     if (tarefa.length == 0){ //O if vai servir para não realizar nenhuma ação se o usuario não digitar nada no input
         
     } else if(tarefa.length > 40){ //Se tiver mais de 40 letras no input, o usuario receberá um alerta pedindo para diminuir
         window.alert(`Digite em menos de 40 letras`)
+        window.document.querySelector(`input#task-title`).value = ``
     } else{ //Aqui o else vai servir para realizar todo o processo de adicionar a lista
         let ul = window.document.querySelector(`ul#task-list`) //Selecionei a ul
         let lista = window.document.createElement(`li`) //Criei um li como variavel sempre que for apertado o botão de subbmit
@@ -26,11 +27,14 @@ button.addEventListener(`click`, function(event){
         lista.appendChild(add) //Adicionei o icon de add como filho da lista
         lista.appendChild(remove) //Adicionei o icon de remove como filho da lista
 
+        //limpar texto
+        window.document.querySelector(`input#task-title`).value = ``
+
         add.addEventListener(`click`, function done(){
-            lista.classList.add(`done`) //Adicionei um evento de click no done, para assim que for clicado, adicionar a class done no icone e fazer com que ele receba as CSS de tarefa concluida.
+            lista.classList.toggle(`done`) //Adicionei um evento de click no done, para assim que for clicado, adicionar a class done no icone e fazer com que ele receba as CSS de tarefa concluida.
         })
         remove.addEventListener(`click`, function remover(){
-            lista.classList.add(`hide`) //Adicionei um evento de click no botao de remove para assim que for clicado, adicionar a class hide no icone e fazer com que ele desapareça como se tivesse sido removido.
+            span.parentNode.remove(true) //Adicionei um evento de click no botao de remove para assim que for clicado, remover o pai do span, que no caso é a lista
         })
     }
 })

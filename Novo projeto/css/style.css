@@ -129,7 +129,7 @@ ul#task-list ion-icon {
 }
 
 .hide {
-    display: none;
+    display: none; /*Isso vai servir para deixar escondido todos os itens que possuirem a class hide*/
 }
 
 #task-list li.done {

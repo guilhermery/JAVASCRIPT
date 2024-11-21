@@ -68,7 +68,7 @@ input#task-title {
 }
 
 input#task-title:focus {
-    outline: none;
+    outline: none; /*Tira o efeito da borda ao clicar*/
 }
 
 input#task-title::placeholder{
@@ -87,11 +87,11 @@ div#tasks-list-container h1{
 }
 
 ul#task-list li {
-    position: relative;
+    position: relative; /*Vai servir para deixar os icones em posição absoluta e poder controlar eles mais livremente*/
     border: 1px solid black;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.404);
     height: 45px;
-    line-height: 45px;
+    line-height: 45px; /*Tem que ser igual o height para deixar os itens no centro*/
     width: 455px;
     list-style: none;
     background-color: white;
@@ -101,7 +101,7 @@ ul#task-list li {
 
 ul#task-list ion-icon {
     position: absolute;
-    top: 0;
+    top: 0; /*Serve para colar no top e controlar livremente*/
     width: 30px;
     height: 35px;
     cursor: pointer;
@@ -111,11 +111,11 @@ ul#task-list ion-icon {
 }
 
 .done-btn {
-    right: 40px;
-}
+    right: 40px; /*Movimenta o icone done 40px da ponta da direita para a esquerda*/
+} 
 
 .remove-btn {
-    right: 0px;
+    right: 0px; /*Cola o icone remove na ponta da caixa na direita*/
 }
 
 .done-btn:hover {
@@ -135,5 +135,5 @@ ul#task-list ion-icon {
 #task-list li.done {
     background-color: rgb(87, 1, 87);
     color: white;
-    text-decoration: line-through;
+    text-decoration: line-through; /*Deixa o texto com uma linha no meio, como se estivesse riscado*/
 }

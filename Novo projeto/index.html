@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="tasks-container">
-        <div id="tasks-header">
-            <h1>Salve a sua próxima tarefa:</h1>
-            <form action="" id="add-task-form">
-                <input type="text" id="task-title" placeholder="O que você vai fazer?">
-                <button id="add-btn" type="submit">
-                    <ion-icon name = "add-outline"></ion-icon>
+    <div id="tasks-container"> <!--Div pai que vai ser o container para guardar as outras-->
+        <div id="tasks-header"> <!--Div do header do projeto, onde ficará a parte de inserir a atividade e o botão-->
+            <h1>Salve a sua próxima tarefa:</h1> <!--A mensagem que indica o que a pessoa deve fazer-->
+            <form action="" id="add-task-form"> <!--Um formulario para guardar as informações que serão obtidas pelo input e pelo botão ao apertar em submit-->
+                <input type="text" id="task-title" placeholder="O que você vai fazer?"> <!--Input para digitar a tarefa que a essoa deseja adicionar na lista-->
+                <button id="add-btn" type="submit"> <!--Button com submit par receber os dados-->
+                    <ion-icon name = "add-outline"></ion-icon> <!--Icon de add que serve para ser visualmente mais agradavel e interativo-->
                 </button>
             </form>
         </div>
-        <div id="tasks-list-container">
-            <h1>Estas são as suas tarefas:</h1>
-            <ul id="task-list">
-                <li class="hide" class="task-box">
+        <div id="tasks-list-container"> <!--Div que vai guardar as tarefas adicionadas pelu usuário-->
+            <h1>Estas são as suas tarefas:</h1> <!--Indica que as tarefas serão mostradas-->
+            <ul id="task-list"> <!--Ul para guardar a lista-->
+                <li class="hide" class="task-box"> <!--li que guarda o span com a tarefa e os icones que vão servir para marcar como feita ou excluir uma tarefa-->
                     <span class="task-title">Teste</span>
                     <ion-icon class="done-btn" name = "checkmark-outline"></ion-icon>
                     <ion-icon class="remove-btn" name = "close-outline"></ion-icon>

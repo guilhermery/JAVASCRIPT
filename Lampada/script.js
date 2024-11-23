@@ -18,3 +18,10 @@ imagem.addEventListener(`mouseover`, liga)
 imagem.addEventListener(`mouseout`, desliga)
 
 imagem.addEventListener(`dblclick`, quebra)
+
+imagem.addEventListener(`load`, function(){
+    if (imagem.src.includes(`imagens/quebrada.jpg`)){
+        imagem.removeEventListener(`mouseover`, liga)
+        imagem.removeEventListener(`mouseout`, desliga)
+    }
+})

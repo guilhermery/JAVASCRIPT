@@ -1,11 +1,14 @@
 # JAVASCRIPT
  Repositório para estudo de Javascript
 
-Site de lista To Do:
+Mini-Projeto lista To Do:
 https://guilhermery.github.io/JAVASCRIPT/Novo-projeto/
 
-Site Calculadora de IMC:
+Mini-Projeto Calculadora de IMC:
 https://guilhermery.github.io/JAVASCRIPT/Calculadora-IMC/
 
-Site Relógio Digital:
+Mini-Projeto Relógio Digital:
 https://guilhermery.github.io/JAVASCRIPT/Relógio-digital/
+
+Mini-Projeto Lampada:
+https://guilhermery.github.io/JAVASCRIPT/Lampada/

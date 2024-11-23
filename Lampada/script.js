@@ -1,9 +1,20 @@
 const imagem = window.document.querySelector(`img#imagem`)
+let src = imagem.src
 
-imagem.addEventListener(`mouseover`, function liga(){
+function liga(){
     imagem.setAttribute(`src`, `imagens/ligada.jpg`)
-})
+}
 
-imagem.addEventListener(`mouseout`, function desliga(){
+function desliga(){
     imagem.setAttribute(`src`, `imagens/desligada.jpg`)
-})
+}
+
+function quebra(){
+    imagem.setAttribute(`src`, `imagens/quebrada.jpg`)
+}
+
+imagem.addEventListener(`mouseover`, liga)
+
+imagem.addEventListener(`mouseout`, desliga)
+
+imagem.addEventListener(`dblclick`, quebra)

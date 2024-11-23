@@ -13,3 +13,18 @@
     text-align: center;
 }
 
+#lampada h1 {
+    font-size: 3em;
+    margin: 40px;
+}
+
+#lampada img {
+    width: 60%;
+    height: auto;
+}
+
+#botoes button {
+    width: 90px;
+    padding: 5px;
+    font-size: 1em;
+}

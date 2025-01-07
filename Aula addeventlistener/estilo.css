@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.curso {
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid rgb(131, 131, 131);
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.c1 {
+    background-color: rgb(190, 190, 190);
+}
+
+.c2 {
+    background-color: rgb(63, 63, 63);
+}
+
+.curso:hover {
+    border-color: rgb(253, 67, 67);
+}
+
+div.evento {
+    background-color: rgb(230, 0, 0);
+}

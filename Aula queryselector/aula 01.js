@@ -18,6 +18,6 @@ console.log(cursosC1)
 console.log(cursosC2)
 console.log(cursoEspecial)*/
 
-query_todosCurso.map((element,i)=>{
-    element.style.bordercolor ="Blue"
-})
+/*query_todosCurso.map((el)=>{
+    el.classList ="azul"
+})*/

@@ -1,0 +1,1 @@
+const copiar = window.document

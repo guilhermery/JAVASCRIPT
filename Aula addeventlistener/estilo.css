@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
+body {
+    width: 99%;
+    height: 100%;
+}
+
+#pai {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    border: 5px solid black;
+}
+
+#copy {
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 90);
+    cursor: pointer;
+}
+
 .curso {
     padding: 5px;
     margin: 10px;

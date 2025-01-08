@@ -1,1 +1,1 @@
-const copiar = window.document
+const copiar = window.document.querySelector(`#copy`)

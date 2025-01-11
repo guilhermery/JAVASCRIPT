@@ -5,7 +5,7 @@ body {
     height: 100%;
 }
 
-#pai {
+main {
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     border: 5px solid black;
 }
 
-#copy {
+#copiar {
     color: white;
     margin: 5px;
     padding: 10px;
@@ -57,5 +57,6 @@ body {
 }
 
 div.evento {
+    color: white;
     background-color: rgb(230, 0, 0);
 }

@@ -1,7 +1,7 @@
-caixa1 = window.document.querySelector(`#caixa1`)
-divc1 = window.document.querySelector(`#c1`)
-divc2 = window.document.querySelector(`#c2`)
-divc6 = window.document.querySelector(`#c6`)
+const caixa1 = window.document.querySelector(`#caixa1`)
+const divc1 = window.document.querySelector(`#c1`)
+const divc2 = window.document.querySelector(`#c2`)
+const divc6 = window.document.querySelector(`#c6`)
 
 //A caixa é Parent do divc1, c2 e c6.
 //Os divs c1, c2 e c6 são child da caixa1 e são siblings entre si, no caso a divc2 é o nextsibling do divc1. 
@@ -18,4 +18,4 @@ console.log(caixa1.lastElementChild) //Também mostra o ultimo elemento.
 
 console.log(caixa1.children) //Mostra todos os elementos filhos de caixa1
 
-console.log(div_c1.getRootNode()) //Mostra o nó raiz, que sempre será o document
+console.log(divc1.getRootNode()) //Mostra o nó raiz, que sempre será o document

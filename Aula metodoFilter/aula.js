@@ -12,5 +12,14 @@ curso.map((el, chave)=>{
 
     const comandos = window.document.createElement(`div`)
     comandos.setAttribute(`class`, `comandos`)
+
+    const rb = window.document.createElement(`input`)
+    rb.setAttribute(`type`,`radio`)
+    rb.setAttribute(`name`,`rb_curso`)
+
+    comandos.appendChild(rb)
     
+    novoElemento.appendChild(comandos)
+
+    caixaCursos.appendChild(novoElemento)
 })

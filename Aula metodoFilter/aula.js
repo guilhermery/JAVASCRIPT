@@ -23,3 +23,13 @@ curso.map((el, chave)=>{
 
     caixaCursos.appendChild(novoElemento)
 })
+
+btnCursoSelecionado.addEventListener(`click`, (evt)=>{
+    const todosRadios = [...window.document.querySelectorAll(`inpute[type=radio]`)]
+    let radioSelecionado = todosRadios.filter((ele, ind, arr)=>{
+        return ele.checked
+    })
+    radioSelecionado = radioSelecionado[0]
+    const cursoSelecionado = radioSelecionado.parentNode.previousSibling.textContent
+    alert(`curso selecionado: ${cursoSelecionado}`)
+})

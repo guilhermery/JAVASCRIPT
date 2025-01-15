@@ -2,6 +2,7 @@
 const caixaCursos = window.document.querySelector(`#caixaCursos`) 
 //Peguei as divs com a classe curso
 const btn_c = [...window.document.querySelectorAll(`.curso`)]
+
 const c1_2 = window.document.querySelector(`#c1_2`)
 //Criei um array com os cursos que vou adicionar na página inicialmente
 let cursos = ["HTML", "CSS", "JavaScript", "PHP", "React", "MySQL", "ReactNative"]
@@ -16,13 +17,6 @@ const btnRemoverCurso = window.document.getElementById(`btnRemoverCurso`)
 //Peguei o input de onde digita o curso para add
 const inputCurso = window.document.querySelector(`#nomeCurso`)
 
-const tirarSelecao = ()=>{
-    const cursosSelecionados = [...window.document.querySelectorAll(`.selecionado`)]
-    cursosSelecionados.map((el)=>{
-        el.classList.remove(`selecionado`)
-    })
-}
-
 //Utilizei o map para percorrer os elementos dentro do array cursos
 cursos.map((el, chave)=>{
     //Criei a div que será o curso e atribui todas as tags necessárias, de id e classe
@@ -30,10 +24,6 @@ cursos.map((el, chave)=>{
     novoElemento.setAttribute(`id`,`c`+chave)
     novoElemento.setAttribute(`class`, `curso c1`)
     novoElemento.innerHTML = el
-    novoElemento.addEventListener(`click`,(evt)=>{
-        tirarSelecao()
-        evt.target.classList.toggle(`selecionado`)
-    })
     //Criei a div comandos em que irá ficar o input
     const comandos = window.document.createElement(`div`)
     comandos.setAttribute(`class`, `comandos`)

@@ -50,7 +50,7 @@ button {
 .curso {
     background-color: rgb(184, 184, 184);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid rgb(143, 143, 143);
     border-radius: 10px;
     width: 200px;
